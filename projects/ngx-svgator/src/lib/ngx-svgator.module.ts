@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 import { PlayerComponent } from './components/player/player.component';
 
 
@@ -8,6 +9,7 @@ import { PlayerComponent } from './components/player/player.component';
     PlayerComponent
   ],
   imports: [
+    HttpClientModule
   ],
   exports: [
     PlayerComponent

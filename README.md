@@ -1,27 +1,49 @@
-# NgxSvgator
+# ngx-svgator
+Angular component to add svgator.com animated SVG to the Angular application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+## Usage
 
-## Development server
+### Step 1
+Go to svgator.com,  export the animated SVG with JavaScript as the animation type
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Step 2
+Store downloaded svg file in the application `src/assets` directory 
 
-## Code scaffolding
+### Step 3
+Install ngx-svgator package
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 4
+Import `NgxSvgatorModule` into your `app.module.ts`
+```ts
+import { NgxSvgatorModule } from 'dist/ngx-svgator';
 
-## Build
+@NgModule({
+  ...,
+  imports: [
+    NgxSvgatorModule
+  ],
+  ...
+})
+export class AppModule { }
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Step 5
+Show svgator animated SVG by placing `sgtr-player` tag in your template file and provide path to your SVG file in `src` attribute
+```html
+...
 
-## Running unit tests
+<sgtr-player src="assets/path-to-your-animated.svg"></sgtr-player>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Development
+All library files are stored in `projects/ngx-svgator` directory. Directory `projects/ngx-svgator-example` contains minimal Angular application so you can preview the library in the application during development.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Build
+Run `npm run lib:build` to build the project. The library build artifacts will be stored in the `dist/ngx-svgator` directory.
+
+### Running preview application
+Run `npm run example` to build the project. Navigate to http://localhost:4200/. Please note that you need to rebuild the library with `npm run lib:build` so you can see changes you made in the preview application.

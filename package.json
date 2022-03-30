@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lib:build": "ng build --project ngx-svgator --configuration production"
+    "example": "ng serve --project ngx-svgator-example",
+    "lib:build": "ng build --project ngx-svgator --configuration production",
+    "lib:package": "ng build --project ngx-svgator --configuration production && cd dist/ngx-svgator && npm pack",
+    "lib:dev": "ng build --project ngx-svgator --configuration production && ng serve"
   },
   "private": true,
   "dependencies": {
