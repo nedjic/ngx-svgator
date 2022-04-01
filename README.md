@@ -28,11 +28,11 @@ export class AppModule { }
 ```
 
 ### Step 5
-Show svgator animated SVG by placing `sgtr-player` tag in your template file and provide path to your SVG file in `src` attribute
+Show svgator animated SVG by placing `svgtr-player` tag in your template file and provide path to your SVG file in `src` attribute
 ```html
 ...
 
-<sgtr-player src="assets/path-to-your-animated.svg"></sgtr-player>
+<svgtr-player src="assets/path-to-your-animated.svg"></svgtr-player>
 
 ...
 
