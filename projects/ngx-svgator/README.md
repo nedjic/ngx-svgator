@@ -1,24 +1,39 @@
-# NgxSvgator
+# ngx-svgator
+Angular component to add svgator.com animated SVG to the Angular application
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+## Usage
 
-## Code scaffolding
+### Step 1
+Go to svgator.com,  export the animated SVG with JavaScript as the animation type.
 
-Run `ng generate component component-name --project ngx-svgator` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-svgator`.
-> Note: Don't forget to add `--project ngx-svgator` or else it will be added to the default project in your `angular.json` file. 
+### Step 2
+Store downloaded svg file in the application `src/assets` directory 
 
-## Build
+### Step 3
+Install ngx-svgator package from NPM by running `npm install @nedjic/ngx-svgator`
 
-Run `ng build ngx-svgator` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Step 4
+Import `NgxSvgatorModule` into your `app.module.ts`
+```ts
+import { NgxSvgatorModule } from '@nedjic/ngx-svgator';
 
-## Publishing
+@NgModule({
+  ...,
+  imports: [
+    NgxSvgatorModule
+  ],
+  ...
+})
+export class AppModule { }
+```
 
-After building your library with `ng build ngx-svgator`, go to the dist folder `cd dist/ngx-svgator` and run `npm publish`.
+### Step 5
+Show svgator animated SVG by placing `sgtr-player` tag in your template file and provide path to your SVG file in `src` attribute
+```html
+...
 
-## Running unit tests
+<sgtr-player src="assets/path-to-your-animated.svg"></sgtr-player>
 
-Run `ng test ngx-svgator` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```

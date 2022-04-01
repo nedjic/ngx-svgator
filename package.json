@@ -1,6 +1,6 @@
 {
   "name": "ngx-svgator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,8 +9,8 @@
     "test": "ng test",
     "example": "ng serve --project ngx-svgator-example",
     "lib:build": "ng build --project ngx-svgator --configuration production",
-    "lib:package": "ng build --project ngx-svgator --configuration production && cd dist/ngx-svgator && npm pack",
-    "lib:dev": "ng build --project ngx-svgator --configuration production && ng serve"
+    "lib:dev": "ng build --project ngx-svgator --configuration production && ng serve",
+    "lib:publish": "ng build --project ngx-svgator --configuration production && cd dist/ngx-svgator && npm publish --access public",
   },
   "private": true,
   "dependencies": {

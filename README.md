@@ -4,18 +4,18 @@ Angular component to add svgator.com animated SVG to the Angular application
 ## Usage
 
 ### Step 1
-Go to svgator.com,  export the animated SVG with JavaScript as the animation type
+Go to svgator.com,  export the animated SVG with JavaScript as the animation type.
 
 ### Step 2
 Store downloaded svg file in the application `src/assets` directory 
 
 ### Step 3
-Install ngx-svgator package
+Install ngx-svgator package from NPM by running `npm install @nedjic/ngx-svgator`
 
 ### Step 4
 Import `NgxSvgatorModule` into your `app.module.ts`
 ```ts
-import { NgxSvgatorModule } from 'dist/ngx-svgator';
+import { NgxSvgatorModule } from '@nedjic/ngx-svgator';
 
 @NgModule({
   ...,

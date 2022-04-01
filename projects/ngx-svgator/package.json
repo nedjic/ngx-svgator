@@ -1,6 +1,6 @@
 {
-  "name": "ngx-svgator",
-  "version": "0.0.1",
+  "name": "@nedjic/ngx-svgator",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
