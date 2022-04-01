@@ -1,11 +1,26 @@
 {
   "name": "@nedjic/ngx-svgator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "description": "Angular component to add svgator.com animated SVG to the Angular application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nedjic/ngx-svgator.git"
+  },
+  "keywords": [
+    "svgator",
+    "angular"
+  ],
+  "author": "Ivan Neđić",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nedjic/ngx-svgator/issues"
+  },
+  "homepage": "https://github.com/nedjic/ngx-svgator#readme"
 }
