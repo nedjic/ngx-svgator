@@ -10,7 +10,7 @@
     "example": "ng serve --project ngx-svgator-example",
     "lib:build": "ng build --project ngx-svgator --configuration production",
     "lib:dev": "ng build --project ngx-svgator --configuration production && ng serve",
-    "lib:publish": "ng build --project ngx-svgator --configuration production && cd dist/ngx-svgator && npm publish --access public",
+    "lib:publish": "ng build --project ngx-svgator --configuration production && cd dist/ngx-svgator && npm publish --access public"
   },
   "private": true,
   "dependencies": {
